@@ -1,0 +1,243 @@
+:root {
+  --primary-color: #1e3d59;
+  --secondary-color: #3498db;
+  --accent-color: #4CAF50;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --text-color: #333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-color);
+}
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.navbar li {
+  margin: 0 1rem;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 0 1rem;
+  margin-top: 0ch;
+  text-align: center;
+}
+.profile-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #88d4f7;
+}
+
+.footer_container{
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     flex-wrap: wrap;
+}
+
+footer section{
+     text-align: center;
+     padding: 10px 70px;
+     margin: 10px;
+}
+
+footer a{
+     font-weight: bold;
+     color: #ffffff;
+}
+
+footer li a{
+     color: #ffffff;
+     font-size: 18;
+     text-decoration: none;
+}
+
+.logoimg{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  transition:all 0.5s ease-in-out;
+}
+
+h4{
+  margin-bottom: 15px;
+}
+ul li {
+    margin-left: 50px;
+}
+
+.images {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.images-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.images-item img {
+    display: block;
+    width: 100%;
+    height: 385px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 0 1rem;
+  margin-top: 0ch;
+  text-align: center;
+}
+
+main{
+    margin: 0px;
+    padding: 0px;
+}
+
+.section-bg {
+    margin: 5px 10px;
+    padding: 20px;
+    padding: 20px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url("Images/bg2.jpeg");
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.464);
+
+}
+
+.section {
+
+    max-width: 1500px;
+    margin: 20px 10px;
+    padding: 20px;
+    font-size: larger;
+    color: #000000;
+    padding: 20px;
+    
+}
+.section-bl {
+
+    max-width: 1500px;
+    margin: 20px 10px;
+    padding: 20px;
+    font-size: larger;
+    color: #000000;
+    padding: 20px;
+    
+}
+
+.section-2 {
+    display: flex;
+    max-width: 1500px;
+    margin: 20px 10px;
+    padding: 20px;
+    font-size: larger;
+    border-radius: 10px;
+    color: #000000;
+
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background:#000000;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.nav {
+    background-color:#1e3d59;
+    opacity: 1;
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.464);
+}
+
+.nav a {
+    color:white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav :hover,
+.nav a.active{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.nav-head {
+    background:#1e3d59;
+    padding: 5px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.464);
+}
+.p-spacing {
+    line-height: 1.5;
+}

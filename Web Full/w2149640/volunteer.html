@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volunteer Opportunities</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .card-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 20px;
+    }
+    .vol-card {
+      flex: 0 0 auto;
+      width: 250px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .vol-card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+    .vol-card button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .vol-card button:hover {
+      background-color: #0d8ae6;
+    }
+    .dropdown-sort {
+      margin: 20px;
+    }
+    .review-section, .form-section {
+      padding: 20px;
+    }
+    .review-card {
+      background-color: #fff;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-left: 4px solid #4caf50;
+    }
+    .form-section textarea {
+      width: 100%;
+      height: 100px;
+    }
+    .rating {
+      margin: 10px 0;
+    }
+    .rating span {
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .rating span:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation should be added from Student 2's Template. -->
+  </header>
+
+  <main>
+    <h2 style="text-align:center;">Volunteer Opportunities</h2>
+
+    <div class="dropdown-sort">
+      <label for="sort">Sort By:</label>
+      <select id="sort">
+        <option>Most Popular</option>
+        <option>Newest</option>
+        <option>Top Rated</option>
+      </select>
+    </div>
+
+    <div class="card-container">
+      <div class="vol-card">
+        <img src="Images/Teach Rural Children Image.jpg" alt="Teaching Kids" />
+        <h3>Teach Rural Children</h3>
+        <p>Help children in underdeveloped areas learn basic skills.</p>
+        <button>Join Now</button>
+      </div>
+      <div class="vol-card">
+        <img src="Images/Book Donation Image.jpg" alt="Library Setup" />
+        <h3>Build School Libraries</h3>
+        <p>Organize and donate books for remote schools.</p>
+        <button>Join Now</button>
+      </div>
+      <div class="vol-card">
+        <img src="Images/Conducting Workshops Image.jpg" alt="Workshop Volunteer" />
+        <h3>Conduct Skill Workshops</h3>
+        <p>Train students in tech, arts or languages.</p>
+        <button>Join Now</button>
+      </div>
+      <div class="vol-card">
+        <img src="Images/Literacy Campaign Image.jpeg" alt="Literacy Campaign" />
+        <h3>Literacy Campaign</h3>
+        <p>Participate in raising awareness about adult literacy.</p>
+        <button>Join Now</button>
+      </div>
+    </div>
+
+    <section class="review-section">
+      <h3>User Ratings</h3>
+      <p><strong>9.4/10</strong> – Excellent | 34 reviews</p>
+
+      <div class="review-card">
+        <strong>🌟🌟🌟🌟🌟</strong><br />
+        “Teaching rural kids was a life-changing experience!”<br />
+        – Maria, May 2025 <a href="#">See more</a>
+      </div>
+      <div class="review-card">
+        <strong>🌟🌟🌟🌟</strong><br />
+        “The literacy program was very well organized.”<br />
+        – John, June 2025 <a href="#">See more</a>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h3>Leave Your Review</h3>
+      <form>
+        <textarea placeholder="Write your review here..."></textarea>
+        <div class="rating">
+          <label>Rate:</label><br />
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+        </div>
+        <button type="submit">Submit Feedback</button>
+        <button type="reset" style="background-color: grey;">Cancel</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="pageEditor_ST1.html" target="_blank">Student 1 Editor Page</a></p>
+  </footer>
+</body>
+</html>
